@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gran Copa Pixel</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <main class="contenedor">
+    <h1 class="titulo">GRAN COPA PIXEL</h1>
+
+    <!-- El lienzo donde dibujamos todo el juego. 1280x720 (16:9). -->
+    <canvas id="pista" width="1280" height="720"></canvas>
+
+    <p class="controles">
+      <span class="tecla">↑</span> acelerar &nbsp;
+      <span class="tecla">↓</span> frenar / reversa &nbsp;
+      <span class="tecla">←</span> <span class="tecla">→</span> girar (solo en movimiento)
+    </p>
+  </main>
+
+  <!-- type="module" => ES Module: permite import/export y usa modo estricto por defecto. -->
+  <script type="module" src="js/game.js"></script>
+</body>
+</html>
